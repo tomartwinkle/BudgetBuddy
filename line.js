@@ -1,3 +1,4 @@
+
 const lineCtx = document.getElementById('lineChart').getContext('2d');
 const lineChart = new Chart(lineCtx, {
     type: 'line',
@@ -6,19 +7,23 @@ const lineChart = new Chart(lineCtx, {
         datasets: [
             {
                 label: 'Transactions ($)',
-                data: [500, 700, 600, 800, 750, 900], 
-                borderColor: 'rgb(16, 228, 72)', 
-                backgroundColor: 'rgba(6, 55, 87, 0.2)', 
+                data: [500, 700, 600, 800, 750, 900],
+                borderColor: 'rgb(16, 228, 72)',
+                backgroundColor: 'rgba(16, 228, 72, 0.2)',
                 borderWidth: 2,
-                tension: 0.4 
+                tension: 0.4,
+                pointRadius: 5,
+                pointHoverRadius: 7
             },
             {
                 label: 'Budget ($)',
-                data: [1000, 1000, 1000, 1000, 1000, 1000], 
-                borderColor: 'rgb(222, 17, 61)', 
-                backgroundColor: 'rgba(255, 99, 132, 0.2)', 
+                data: [1000, 1000, 1000, 1000, 1000, 1000],
+                borderColor: 'rgb(222, 17, 61)',
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 borderWidth: 2,
-                tension: 0.4 
+                tension: 0.4,
+                pointRadius: 5,
+                pointHoverRadius: 7
             }
         ]
     },
@@ -28,6 +33,13 @@ const lineChart = new Chart(lineCtx, {
             legend: {
                 display: true,
                 position: 'top'
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        return `${context.dataset.label}: $${context.raw}`;
+                    }
+                }
             }
         },
         scales: {
@@ -36,6 +48,9 @@ const lineChart = new Chart(lineCtx, {
                 title: {
                     display: true,
                     text: 'Amount ($)'
+                },
+                grid: {
+                    color: 'rgba(200, 200, 200, 0.5)'
                 }
             },
             x: {
