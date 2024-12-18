@@ -11,7 +11,10 @@ Financial Forecasting: Predict future finances with AI-driven analytics. Goal-Ba
 Unlike traditional apps requiring daily expense logging, BudgetBuddy automates insights and simplifies financial tracking, offering a user-friendly solution for modern lifestyles.
 
 ## Tech Stack
-Frontend: HTML, CSS, JavaScript Backend: Python (Flask/Django) Visualization: Chart.js/D3.js Database: MongoDB/PostgreSQL
+Frontend: HTML, CSS, JavaScript
+Backend: Python (Flask/Django) 
+Visualization: Chart.js/D3.js
+Database: MongoDB/PostgreSQL
 
 ## Team
 Twinkle Tomar 
