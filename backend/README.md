@@ -30,7 +30,35 @@ Body: Select `raw` and `JSON` format, then input:
 ```
 
 ### For adding transactions
+method: `POST`
+
+URL: "http://127.0.0.1:5000/api/transactions/add_transactions"
+
+Body: Select `raw` and `JSON` format, then input:
+```
+{
+    "user_id": 5,
+    "type": "credit",
+    "category": "salary",
+    "amount": 5000,
+    "description": "Monthly Salary"
+}
+```
 
 ### For displaying balance
+method: `GET`
+
+URL: "http://127.0.0.1:5000/api/transactions/get_balance?user_id=5"
 
 ### For what-if scenerios
+method: `POST`
+
+URL: "http://127.0.0.1:5000/api/transactions/add_transactions"
+
+Body: Select `raw` and `JSON` format, then input:
+```
+{
+    "user_id": 5,
+    "question": "How can I save 1000 rs in 6 months?"
+}
+```
