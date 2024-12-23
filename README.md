@@ -1,4 +1,4 @@
-check out our website at : https://tomartwinkle.github.io/BudgetBuddy/
+check out our website at : https://codepen.io/Twinkle-Tomar/full/pvzNRRQ
 
 # BudgetBuddy
 ### Your AI-Powered Financial Mentor
