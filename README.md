@@ -1,4 +1,4 @@
-check out our website at : https://codepen.io/Twinkle-Tomar/full/pvzNRRQ
+check out our website at : https://codepen.io/Twinkle-Tomar/full/pvzNRRQ   or 
 
 # BudgetBuddy
 ### Your AI-Powered Financial Mentor
