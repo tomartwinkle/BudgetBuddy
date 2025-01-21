@@ -21,6 +21,6 @@ Visualization: Chart.js/D3.js<br>
 Database: MongoDB/PostgreSQL<br>
 
 ## Team
-Twinkle Tomar <br>
+Twinkle Tomar (team lead)<br>
 Shravani Sawant<br>
 Soumya Jha<br>
