@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Chatbot Integration</title>
+<link href="chatbot.css" rel="stylesheet">
+</head>
+<body>
+
+ 
+  <button class="chat-toggle-btn" onclick="toggleChatbox()">💬</button>
+
+  
+  <div class="chat-container" id="chat-container">
+    <div class="chat-header" onclick="toggleChatbox()">Chatbot</div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+ 
+  <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+  <script src="chatbot.js"></script>
+
+</body>
+</html>
