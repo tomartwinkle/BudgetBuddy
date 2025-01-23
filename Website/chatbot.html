@@ -16,14 +16,17 @@
     <div class="chat-header" onclick="toggleChatbox()">Chatbot</div>
     <div class="chat-box" id="chat-box"></div>
     <div class="chat-input">
-      <input type="text" id="user-input" placeholder="Type a message..." />
+      <label for="user_id"> User ID : </label>
+      <input type="text" id="user_id" name="user_id" placeholder="Type a message..." />
+       <label for="question"> Your Question : </label>
+      <textarea  id="question" name="question" rows="4" required></textarea>
       <button onclick="sendMessage()">Send</button>
     </div>
   </div>
 
  
   <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
-  <script src="chatbot.js"></script>
+  <script src="what_if.js"></script>
 
 </body>
 </html>
