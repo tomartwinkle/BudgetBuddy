@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="what_if.css">
 </head>
 <body>
-    <div class="container">
+    <!-- Chat button -->
+    <div id="chatButton" class="chat-button">💬</div>
+
+    <!-- Chat window (Initially hidden) -->
+    <div id="chatWindow" class="chat-container" style="display: none;">
         <h1>BudgetBuddy - What If</h1>
+        <div id="chat-box">
+            <!-- Chat messages will appear here -->
+        </div>
         <form id="whatIfForm">
-            <label for="user_id">User ID:</label>
-            <input type="text" id="user_id" name="user_id" required>
-            <label for="question">Your Question:</label>
-            <textarea id="question" name="question" rows="4" required></textarea>
-            <button type="submit">Submit</button>
+            <input type="text" id="user_id" name="user_id" placeholder="Enter your User ID" required />
+            <textarea id="question" name="question" placeholder="Ask a question..." rows="2" required></textarea>
+            <button type="submit">Send</button>
         </form>
-        <div id="response"></div>
     </div>
+
     <script src="what_if.js"></script>
 </body>
 </html>
